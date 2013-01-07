@@ -1,21 +1,24 @@
 /**
  * jTimestampToLocal
- * @description 时间戳转换本地时间程序
- * @date    2013.1.5
- * @version 1.0
- * @author Khiyuan.Fan <Fan.Khiyuan@gmail.com>
- * @license http://creativecommons.org/licenses/by-sa/3.0/cn/ 本作品采用知识共享 署名-相同方式共享 3.0 中国大陆 许可协议进行许可
+ * @description 将指定位置的时间戳转换本地时间并替换到标签内
+ * @date        2013.1.7
+ * @version     1.0.1
+ * @author      Khiyuan.Fan <Fan.Khiyuan@gmail.com>
+ * @license     http://creativecommons.org/licenses/by-sa/3.0/cn/ 本作品采用知识共享 署名-相同方式共享 3.0 中国大陆 许可协议进行许可
  *
- *----------------------------------------------------------------------------
+ ****************************************************************************
+ * @since       1.0.1   添加部分简单的格式化输出内容，暂时有 %Y %m %d %H %M %S
+ * @since       1.0
+ ****************************************************************************
  * jTimestampToLocal
  * @param   json
  *          {
- *            pos   : '',   时间戳保存位置，’inner‘为标签内，其它则为标签的对应属性
- *            format: ''    格式化输出，默认‘%Y/%m/%d %H:%M:%S'
+ *            pos   : '',   时间戳保存位置，'inner'为标签内，其它则为标签的对应属性
+ *            format: ''    格式化输出，默认'%Y/%m/%d %H:%M:%S'
  *          }
  * @return  string
- *----------------------------------------------------------------------------
- * @todo    添加格式化输出的内容
+ ****************************************************************************
+ * @todo    丰富格式化输出的内容
  **/
 (function($) {
   $.fn.jTimestampToLocal=function(options){
